@@ -14,6 +14,7 @@ deployment "development" {
       Stack       = "learn-stacks-deploy-aws",
       Environment = "sandbox"
     }
-    destroy = true
+    
   }
+  destroy = true
 }
