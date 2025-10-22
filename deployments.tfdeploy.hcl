@@ -8,23 +8,11 @@ identity_token "aws" {
 deployment "development" {
   inputs = {
     regions        = ["us-east-1"]
-    role_arn       = "<YOUR_ROLE_ARN>"
+    role_arn       = "arn:aws:iam::034362039150:role/aws_jessica.ang_test-developer"
     identity_token = identity_token.aws.jwt
     default_tags = {
       Stack       = "learn-stacks-deploy-aws",
       Environment = "dev"
-    }
-  }
-}
-
-deployment "production" {
-  inputs = {
-    regions        = ["us-east-1", "us-west-1"]
-    role_arn       = "<YOUR_ROLE_ARN>"
-    identity_token = identity_token.aws.jwt
-    default_tags = {
-      Stack       = "learn-stacks-deploy-aws",
-      Environment = "prod"
     }
   }
 }
