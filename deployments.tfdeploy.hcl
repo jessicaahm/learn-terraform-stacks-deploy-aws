@@ -8,7 +8,7 @@ identity_token "aws" {
 deployment "development" {
   inputs = {
     regions        = ["us-east-1"]
-    role_arn       = "arn:aws:iam::034362039150:role/aws_jessica.ang_test-developer"
+    role_arn       = "arn:aws:iam::034362039150:role/stacks-jessicaorg-ahm-hackathon"
     identity_token = identity_token.aws.jwt
     default_tags = {
       Stack       = "learn-stacks-deploy-aws",
