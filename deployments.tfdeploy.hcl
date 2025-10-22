@@ -12,7 +12,7 @@ deployment "development" {
     identity_token = identity_token.aws.jwt
     default_tags = {
       Stack       = "learn-stacks-deploy-aws",
-      Environment = "dev"
+      Environment = "sandbox"
     }
   }
 }
