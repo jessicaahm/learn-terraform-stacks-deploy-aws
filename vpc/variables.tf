@@ -4,7 +4,7 @@
 variable "vpc_name" {
   description = "Name of the VPC."
   type        = string
-  default     = "learn-stacks-vpc"
+  default     = "tfstacks-vpc"
 }
 
 variable "vpc_cidr" {
